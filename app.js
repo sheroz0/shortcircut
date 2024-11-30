@@ -3,14 +3,22 @@ let a = 5;
 
    let exp1 = ((4 + 5) && "abc" || false + "test") * (a-- || --a) || (false && (++a + 1)) * "end";
 
+  //  9 && "abc":falsetest 5
+
+
    console.log(exp1); 
 
 // q2
 	let exp2 = 10 * ("foo" && 5 + (++a) || "bar") && (false + "test") || 0 && true;
 
+  // foo" && 5 + (++a):  11 || "bar": 110
+
+
     console.log(exp2);
 // q
     let exp3 = 3 + (a-- || "start") * 4 && (--a + "value") * (1 + 2) + "result";
+  
+    // 20 "3value" * 3:
     console.log(exp3);
 
  // q   
@@ -18,12 +26,18 @@ let a = 5;
     console.log(exp4);
 
 
+    // hello" * 7: "NaNxyz"
+
   // q  
     let exp5 = (true || (0 + 1) * "test" && 4) || (false && 3 + "value") * a-- + 2;
+   
+// false && 3 + "value" 2
+
     console.log(exp5);
 
   // q  
     let exp6 = ++a + "abc" && (4 * 2) + 3 || (0 + 1) && (3 * "hello") || a--;
+  //  6abc".  11 || (0 + 1) && (3 * "hello")
     console.log(exp6);
 
    // q 
